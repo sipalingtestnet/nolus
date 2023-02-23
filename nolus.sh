@@ -116,7 +116,7 @@ nolusd config keyring-backend test
 nolusd config node tcp://localhost:43657
 
 # Initialize the node
-nolusd init $MONIKER --chain-id nolus-rila
+nolusd init $NODENAME --chain-id nolus-rila
 
 # Download genesis and addrbook
 curl -Ls https://snapshots.kjnodes.com/nolus-testnet/genesis.json > $HOME/.nolus/config/genesis.json

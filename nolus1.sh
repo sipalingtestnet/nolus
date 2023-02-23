@@ -13,7 +13,7 @@ echo " ██████╔╝██║░░░░░░░░██║░░�
 echo " ╚═════╝░╚═╝░░░░░░░░╚═╝░░░░░░░░░╚═╝░░╚══╝░╚════╝░╚═════╝░╚══════╝"
 echo "================================================================="
 echo -e "\e[0m"
-echo -e '\e[33mNama Project =\e[55m' Coreum 
+echo -e '\e[33mNama Project =\e[55m' Nolus 
 echo -e '\e[33mKomunitas Kami =\e[55m' Sipaling Testnet X CNESIA112
 echo -e '\e[33mChannel Telegram =\e[55m' https://t.me/ssipalingtestnet
 echo -e '\e[33mGroup Telegram =\e[55m' https://t.me/diskusisipalingairdrop
@@ -27,7 +27,7 @@ sleep 1
 NOLUS_PORT=31
 
 
-echo "export PORT=${PORT}" >> $HOME/.bash_profile
+echo "export NOLUS_PORT=${NOLUS_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 # Set Vars
@@ -37,8 +37,8 @@ if [ ! $NODENAME ]; then
 fi
 echo ""
 echo -e "YOUR NODE NAME : \e[1m\e[35m$NODENAME\e[0m"
-echo -e "NODE CHAIN CHAIN  : \e[1m\e[35mcoreum-testnet-1\e[0m"
-echo -e "NODE PORT      : \e[1m\e[35m$PORT\e[0m"
+echo -e "NODE CHAIN CHAIN  : \e[1m\e[35mNolus\e[0m"
+echo -e "NODE PORT      : \e[1m\e[35m$NOLUS_PORT\e[0m"
 echo ""
 
 cho -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1

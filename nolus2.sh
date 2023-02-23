@@ -1,6 +1,4 @@
-#
-# // Copyright (C) 2022 Salman Wahib Recoded By NodeX Capital
-#
+
 
 #!/bin/bash
 clear
@@ -15,7 +13,7 @@ echo " ██████╔╝██║░░░░░░░░██║░░�
 echo " ╚═════╝░╚═╝░░░░░░░░╚═╝░░░░░░░░░╚═╝░░╚══╝░╚════╝░╚═════╝░╚══════╝"
 echo "================================================================="
 echo -e "\e[0m"
-echo -e '\e[33mNama Project =\e[55m' Coreum 
+echo -e '\e[33mNama Project =\e[55m' Nolus 
 echo -e '\e[33mKomunitas Kami =\e[55m' Sipaling Testnet X CNESIA112
 echo -e '\e[33mChannel Telegram =\e[55m' https://t.me/ssipalingtestnet
 echo -e '\e[33mGroup Telegram =\e[55m' https://t.me/diskusisipalingairdrop

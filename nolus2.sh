@@ -1,4 +1,6 @@
-
+#
+# // Copyright (C) 2022 Salman Wahib Recoded By NodeX Capital
+#
 
 #!/bin/bash
 clear
@@ -13,7 +15,7 @@ echo " ██████╔╝██║░░░░░░░░██║░░�
 echo " ╚═════╝░╚═╝░░░░░░░░╚═╝░░░░░░░░░╚═╝░░╚══╝░╚════╝░╚═════╝░╚══════╝"
 echo "================================================================="
 echo -e "\e[0m"
-echo -e '\e[33mNama Project =\e[55m' Nolus 
+echo -e '\e[33mNama Project =\e[55m' Coreum 
 echo -e '\e[33mKomunitas Kami =\e[55m' Sipaling Testnet X CNESIA112
 echo -e '\e[33mChannel Telegram =\e[55m' https://t.me/ssipalingtestnet
 echo -e '\e[33mGroup Telegram =\e[55m' https://t.me/diskusisipalingairdrop
@@ -24,24 +26,29 @@ echo "================================================================="
 
 sleep 1
 
+
+
+# set vars
+if [ ! $NODENAME ]; then
+	read -p "Enter node name: " NODENAME
+	echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
+fi
 NOLUS_PORT=31
-
-
+if [ ! $WALLET ]; then
+	echo "export WALLET=wallet" >> $HOME/.bash_profile
+fi
+echo "export NOLUS_CHAIN_ID=nolus-rila" >> $HOME/.bash_profile
 echo "export NOLUS_PORT=${NOLUS_PORT}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
-# Set Vars
-if [ ! $NODENAME ]; then
-	read -p "[ENTER YOUR NODE] > " NODENAME
-	echo 'export NODENAME='$NODENAME >> $HOME/.bash_profile
-fi
-echo ""
-echo -e "YOUR NODE NAME : \e[1m\e[35m$NODENAME\e[0m"
-echo -e "NODE CHAIN CHAIN  : \e[1m\e[35mNolus\e[0m"
-echo -e "NODE PORT      : \e[1m\e[35m$NOLUS_PORT\e[0m"
-echo ""
+echo '================================================='
+echo -e "moniker : \e[1m\e[32m$NODENAME\e[0m"
+echo -e "wallet  : \e[1m\e[32m$WALLET\e[0m"
+echo -e "chain-id: \e[1m\e[32m$NOLUS_CHAIN_ID\e[0m"
+echo '================================================='
+sleep 2
 
-cho -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m1. Updating packages... \e[0m" && sleep 1
 # update
 sudo apt update && sudo apt list --upgradable && sudo apt upgrade -y
 
